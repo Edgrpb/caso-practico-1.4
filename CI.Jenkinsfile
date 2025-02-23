@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Get Code') {
             steps {
-                git branch: 'develop', url: 'https://github.com/'
+                git branch: 'develop', url: 'https://github.com/Edgrpb/caso-practico-1.4.git'
             }
         }
         
@@ -67,7 +67,8 @@ pipeline {
                         git fetch --all
                         git checkout master
                         git merge origin/develop
-                        git push https://${GITHUB_TOKEN}@github.com/
+                        git push https://${GITHUB_TOKEN}@github.com:Edgrpb/caso-practico-1.4.git
+                        
                     '''
                 }
             }

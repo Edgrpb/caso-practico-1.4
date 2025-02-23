@@ -10,7 +10,7 @@ pipeline {
             steps {
                 git branch: 'master', 
                     credentialsId: 'TOKEN_ID',
-                    url: 'https://github.com/usuario/repositorio.git'
+                    url: 'https://github.com/Edgrpb/caso-practico-1.4.git'
             }
         }
         //realizar deploy en Produccion
