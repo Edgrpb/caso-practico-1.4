@@ -46,7 +46,7 @@ pipeline {
                         python -m pytest --maxfail=1 ${WORKSPACE}/test/integration/todoApiTest.py
                     """
 
-                    // Ejecutar pruebas con curl
+                    // Ejecutar pruebas con curl t
                     sh """
                         echo "Ejecutando pruebas con curl..."
                         
